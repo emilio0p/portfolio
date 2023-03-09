@@ -1,31 +1,33 @@
-<!DOCTYPE html> 
-<html lang="es"> 
+<!DOCTYPE html>
+<html lang="es">
 
- <head> 
-<meta charset="UTF-8">
-<meta name ="description" content="Portfolio de Emilio Orduña Peña">
-<meta name ="keywords"  content="dev, fullstack, dam">
-<meta name="language"   content="ES">
-<meta name="author" content="emilio.orduna@a.vedrunasevillasj.es">
-<meta name="robots" content="index, follow">
-<meta name="revised" content="Sunday, July 2nd, 2022, 00:00am">
-<meta name="viewport" content="width=device-width, initial scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE-Edge, chrome1">
-<meta http-equiv="refresh"  content="300; URL=index.html">
-<link href="css/styles.css" rel="stylesheet" type="text/css">
-<link rel="shortcut icon" href="img/eLogo.webp" type="image/x-icon">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-<title>Emilio's Portfolio</title>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio de Emilio Orduña Peña">
+    <meta name="keywords" content="dev, fullstack, dam">
+    <meta name="language" content="ES">
+    <meta name="author" content="emilio.orduna@a.vedrunasevillasj.es">
+    <meta name="robots" content="index, follow">
+    <meta name="revised" content="Sunday, July 2nd, 2022, 00:00am">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge, chrome1">
+    <meta http-equiv="refresh" content="300; URL=index.html">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/eLogo.webp" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <script src="js/scripts.js"></script> -->
+    <title>Emilio's Portfolio</title>
 </head>
- 
- <body>
+
+<body>
+
+
 
     <div class="header animate__animated animate__backInDown">
         <a href="#" class="header__logo">Emilio's Portfolio.</a>
@@ -44,7 +46,15 @@
             <h3>soy Emilio</h3>
             <h4>y este es mi</h4>
             <h1>Portfolio.</h1>
-            <a href="#quienSoy">Empecemos <i class="ri-logout-box-r-fill"></i></a>
+            <div class="welcome__temas">
+                <a class="welcome__temas__botonTema" onclick="setTheme('porDefecto')">Tema Oscuro <i
+                        class="ri-logout-box-r-fill"></i></a>
+                <a class="welcome__temas__botonTema" onclick="setTheme('claro')">Tema Claro <i
+                        class="ri-logout-box-r-fill"></i></a>
+                <a class="welcome__temas__botonTema" onclick="setTheme('azul')">Tema Azul <i
+                        class="ri-logout-box-r-fill"></i></a>
+            </div>
+
         </div>
 
         <div class="welcome__logo animate__animated animate__backInRight">
@@ -53,7 +63,7 @@
 
     </div>
 
-    <hr/>
+    <hr />
 
     <div id="quienSoy">
 
@@ -62,24 +72,30 @@
         <div class="quienSoy__container">
             <img src="img/avatar.png" alt="Mi imagen">
 
-            <p>Hola, mi nombre es Emilio, tengo 19 años ,y actualmente estoy cursando 1º de DAM (Desarrollo de Aplicaciones 
-                Multiplataforma). <!----> Hola, mi nombre es Emilio, tengo 19 años ,y actualmente estoy cursando 1º de DAM (Desarrollo de Aplicaciones 
-                Multiplataforma). Hola, mi nombre es Emilio, tengo 19 años ,y actualmente estoy cursando 1º de DAM (Desarrollo de Aplicaciones 
-                Multiplataforma). Hola, mi nombre es Emilio, tengo 19 años ,y actualmente estoy cursando 1º de DAM (Desarrollo de Aplicaciones 
-                Multiplataforma). Hola, mi nombre es Emilio, tengo 19 años ,y actualmente estoy cursando 1º de DAM (Desarrollo de Aplicaciones 
+            <p>Hola, mi nombre es Emilio, tengo 19 años ,y actualmente estoy cursando 1º de DAM (Desarrollo de
+                Aplicaciones
+                Multiplataforma). <!----> Hola, mi nombre es Emilio, tengo 19 años ,y actualmente estoy cursando 1º de
+                DAM (Desarrollo de Aplicaciones
+                Multiplataforma). Hola, mi nombre es Emilio, tengo 19 años ,y actualmente estoy cursando 1º de DAM
+                (Desarrollo de Aplicaciones
+                Multiplataforma). Hola, mi nombre es Emilio, tengo 19 años ,y actualmente estoy cursando 1º de DAM
+                (Desarrollo de Aplicaciones
+                Multiplataforma). Hola, mi nombre es Emilio, tengo 19 años ,y actualmente estoy cursando 1º de DAM
+                (Desarrollo de Aplicaciones
                 Multiplataforma).</p>
         </div>
 
-        
+
 
     </div>
 
-    <hr/>
+    <hr />
 
     <div id="sobreMi">
         <h2>Sobre mi</h2>
 
-        <p>En este apartado encontrará información a cerca de mis conocimientos y experiencia con los diferentes lenguajes
+        <p>En este apartado encontrará información a cerca de mis conocimientos y experiencia con los diferentes
+            lenguajes
             que he ido aprendiendo, ya sea de manera autodidáctica o por formaciones.
         </p>
 
@@ -172,73 +188,85 @@
 
     </div>
 
-    <hr/>
+    <hr />
 
     <div id="portfolio">
         <h2>Portfolio</h2>
-        <p id="portfolio__desc">A continuación muestro mis últimos proyectos. ¿Estás interesado en algún lenguaje en específico?</p>
-            <form>
-                <select name="modulo" id="modulo">
-                    <option value="all">Todos</option>
-                    <option value="java">Java</option>
-                    <option value="sql">SQL</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="js">JavaScript</option>
-                </select>
-            </form>
+        <p id="portfolio__desc">A continuación muestro mis últimos proyectos. ¿Estás interesado en algún lenguaje en
+            específico?</p>
+        <form>
+            <select name="modulo" id="modulo">
+                <option value="niuno">Ninguno</option>
+                <option value="all">Todos</option>
+                <option value="java">Java</option>
+                <option value="sql">SQL</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+            </select>
+        </form>
 
-            <div class="portfolio__cartas">
-                <div class="portfolio__cartas__carta html css">
-                    <h3>Portfolio Personal</h3>
-                    <p>Descripción: El proyecto de este trabajo consistió en hacer tu
-                        propia página portfolio.</p>
-                    <h4>Tecnologías utilizadas:</h4>
-                    <span class="html">HTML</span>
-                    <span class="css">CSS</span>
-                    <a href="https://github.com/emilio0p" target="_blank"><p><u>Enlace Github</u></p></a>
-                    
-                </div>
-                <div class="portfolio__cartas__carta java">
-                    <h3>Boletines Arrays</h3>
-                    <p>Descripción: Listado de unos 35 ejercicios (apróx.) sobre el temario de Arrays.</p>
-                    <h4>Tecnologías utilizadas:</h4>
-                    <span class="java">JAVA</span>
-                    <a href="https://github.com/emilio0p" target="_blank"><p><u>Enlace Github</u></p></a>
-                </div>
-                <div class="portfolio__cartas__carta js html css">
-                    <h3>Portfolio + JS</h3>
-                    <p>Descripción: El proyecto de este trabajo consistió en hacer tu
-                        propia página portfolio y añadirle algunas funciones con JS.</p>
-                    <h4>Tecnologías utilizadas:</h4>
-                    <span class="js">JavaScript</span>
-                    <span class="html">HTML</span>
-                    <span class="css">CSS</span>
-                    <a href="https://github.com/emilio0p" target="_blank"><p><u>Enlace Github</u></p></a>
-                </div>
-                <div class="portfolio__cartas__carta sql">
-                    <h3>Boletins SQL</h3>
-                    <p>Descripción: Listado de unos 20 ejercicios (apróx.) sobre el temario de CRUD en SQL.</p>
-                    <h4>Tecnologías utilizadas:</h4>
-                    <span class="sql">SQL</span>
-                    <a href="https://github.com/emilio0p" target="_blank"><p><u>Enlace Github</u></p></a>
-                </div>
-                <div class="portfolio__cartas__carta html css js java sql">
-                    <h3>Proyecto 360°</h3>
-                    <p>Descripción: Proyecto que engloba todas las materias aprendidas hasta el momento, incluyendo Git.</p>
-                    <h4>Tecnologías utilizadas:</h4>
-                    <span class="html">HTML</span>
-                    <span class="css">CSS</span>
-                    <span class="js">JavaScript</span>
-                    <span class="java">JAVA</span>
-                    <span class="sql">SQL</span>
-                    <a href="https://github.com/emilio0p" target="_blank"><p><u>Enlace Github</u></p></a>
-                </div>
+        <div class="portfolio__cartas">
+            <div id="carta1" class="portfolio__cartas__carta html css" style="display: none;">
+                <h3>Portfolio Personal</h3>
+                <p>Descripción: El proyecto de este trabajo consistió en hacer tu
+                    propia página portfolio.</p>
+                <h4>Tecnologías utilizadas:</h4>
+                <span class="html">HTML</span>
+                <span class="css">CSS</span>
+                <a href="https://github.com/emilio0p" target="_blank">
+                    <p><u>Enlace Github</u></p>
+                </a>
+
             </div>
-        
+            <div id="carta2" class="portfolio__cartas__carta java" style="display: none;">
+                <h3>Boletines Arrays</h3>
+                <p>Descripción: Listado de unos 35 ejercicios (apróx.) sobre el temario de Arrays.</p>
+                <h4>Tecnologías utilizadas:</h4>
+                <span class="java">JAVA</span>
+                <a href="https://github.com/emilio0p" target="_blank">
+                    <p><u>Enlace Github</u></p>
+                </a>
+            </div>
+            <div id="carta3" class="portfolio__cartas__carta js html css" style="display: none;">
+                <h3>Portfolio + JS</h3>
+                <p>Descripción: El proyecto de este trabajo consistió en hacer tu
+                    propia página portfolio y añadirle algunas funciones con JS.</p>
+                <h4>Tecnologías utilizadas:</h4>
+                <span class="js">JavaScript</span>
+                <span class="html">HTML</span>
+                <span class="css">CSS</span>
+                <a href="https://github.com/emilio0p" target="_blank">
+                    <p><u>Enlace Github</u></p>
+                </a>
+            </div>
+            <div id="carta4" class="portfolio__cartas__carta sql" style="display: none;">
+                <h3>Boletins SQL</h3>
+                <p>Descripción: Listado de unos 20 ejercicios (apróx.) sobre el temario de CRUD en SQL.</p>
+                <h4>Tecnologías utilizadas:</h4>
+                <span class="sql">SQL</span>
+                <a href="https://github.com/emilio0p" target="_blank">
+                    <p><u>Enlace Github</u></p>
+                </a>
+            </div>
+            <div id="carta5" class="portfolio__cartas__carta html css js java sql" style="display: none;">
+                <h3>Proyecto 360°</h3>
+                <p>Descripción: Proyecto que engloba todas las materias aprendidas hasta el momento, incluyendo Git.</p>
+                <h4>Tecnologías utilizadas:</h4>
+                <span class="html">HTML</span>
+                <span class="css">CSS</span>
+                <span class="js">JavaScript</span>
+                <span class="java">JAVA</span>
+                <span class="sql">SQL</span>
+                <a href="https://github.com/emilio0p" target="_blank">
+                    <p><u>Enlace Github</u></p>
+                </a>
+            </div>
+        </div>
+
     </div>
 
-    <hr/>
+    <hr />
 
     <div class="contacto" id="contact">
         <h2>Contacto</h2>
@@ -248,61 +276,64 @@
             <form action="mailto:emilio.ordunap@hotmail.com" method="get" class="contacto__content__form">
                 <input type="text" name="nomb" id="nomb" placeholder="Nombre">
                 <input type="text" name="asunto" id="asunto" placeholder="Asunto">
-                <textarea id="body" class="form-control text-info mt-2 w-10" name="body" placeholder="Aqui va el cuerpo del mensaje..." rows="15" cols="40"
-                        required></textarea>
+                <textarea id="body" class="form-control text-info mt-2 w-10" name="body"
+                    placeholder="Aqui va el cuerpo del mensaje..." rows="15" cols="40" required></textarea>
                 <input id="sendBttn" class="btn btn-primary btn-lg" type="submit" value="Enviar" />
             </form>
 
         </div>
 
-    
+
     </div>
 
 
     <div class="footer">
-        <hr/>
+        <hr />
         <div class="footer__icons">
             <a href="https://www.instagram.com/emi_op_"><i class="ri-instagram-fill"></i></a>
-            <a href="https://www.linkedin.com/in/emilio-ordu%C3%B1a-pe%C3%B1a-b6bb51256/"><i class="ri-linkedin-box-fill"></i></i></a>
+            <a href="https://www.linkedin.com/in/emilio-ordu%C3%B1a-pe%C3%B1a-b6bb51256/"><i
+                    class="ri-linkedin-box-fill"></i></i></a>
             <a href="discordapp.com/users/388101750143320066"><i class="ri-discord-fill"></i></i></a>
         </div>
 
         <h3 id="footer__underIcons">Encuéntrame en mis redes sociales</h2>
 
-        <div class="footer__columns">
-            <div class="footer__columns__col">
-                <h3>Titulo 1</h3>
-                <p>Template</p>
-                <p>Template</p>
-                <p>Template</p>
-                <p>Template</p>
+            <div class="footer__columns">
+                <div class="footer__columns__col">
+                    <h3>Titulo 1</h3>
+                    <p>Template</p>
+                    <p>Template</p>
+                    <p>Template</p>
+                    <p>Template</p>
 
-            </div>
-            <div class="footer__columns__col">
-                <h3>Titulo 2</h3>
-                <p>Template</p>
-                <p>Template</p>
-                <p>Template</p>
-                <p>Template</p>
-                
-            </div>
-            <div class="footer__columns__col">
-                <h3>Titulo 3</h3>
-                <p>Template</p>
-                <p>Template</p>
-                <p>Template</p>
-                <p>Template</p>
-                
-            </div>
-        </div>
+                </div>
+                <div class="footer__columns__col">
+                    <h3>Titulo 2</h3>
+                    <p>Template</p>
+                    <p>Template</p>
+                    <p>Template</p>
+                    <p>Template</p>
 
-        <div class="footer__end">
-            <p>§</p>
-            <p>2023-2024©</p>
-        </div>
-        
+                </div>
+                <div class="footer__columns__col">
+                    <h3>Titulo 3</h3>
+                    <p>Template</p>
+                    <p>Template</p>
+                    <p>Template</p>
+                    <p>Template</p>
+
+                </div>
+            </div>
+
+            <div class="footer__end">
+                <p>§</p>
+                <p>2023-2024©</p>
+            </div>
+
     </div>
 
- </body> 
+
+    <script src="js/scripts.js"></script>
+</body>
 
 </html>
