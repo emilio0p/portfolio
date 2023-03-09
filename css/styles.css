@@ -9,8 +9,24 @@
     text-decoration: none;
 }
 
+:root,
+:root.porDefecto {
+  --bg-color: linear-gradient(243deg, rgba(37,37,38,1) 0%, rgba(83,83,91,1) 57%, rgba(106,105,105,1) 100%);
+  --text-color: rgb(255, 255, 255);
+}
+
+:root.claro {
+  --bg-color: linear-gradient(243deg, rgb(106, 106, 106) 0%, rgb(208, 208, 208) 57%, rgb(201, 201, 201) 100%);
+  --text-color: #01bd49;
+}
+
+:root.azul {
+    --bg-color: linear-gradient(243deg, rgb(37, 37, 101) 0%, rgb(84, 84, 198) 57%, rgb(66, 86, 153) 100%);
+    --text-color: #45ADFE;
+  }
+
 body{
-    background: linear-gradient(243deg, rgba(37,37,38,1) 0%, rgba(83,83,91,1) 57%, rgba(106,105,105,1) 100%);
+    background: var(--bg-color);
 }
 
 /*SEPARADOR*/
@@ -27,7 +43,7 @@ body{
   border-radius: 16px;
   border-width: 0 0 4px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: var(--text-color);
   cursor: pointer;
   display: inline-block;
   font-family: din-round,sans-serif;
@@ -100,7 +116,7 @@ body{
 .header__logo{
     font-size: 30px;
     font-weight: 700;
-    color: white;
+    color: var(--text-color);
 }
 
 .header__nav-menu{
@@ -108,7 +124,7 @@ body{
 }
 
 .header__nav-menu a{
-    color: white;
+    color: var(--text-color);
     margin-left: 55px;
     font-size: 15px;
     font-weight: 600;
@@ -146,31 +162,31 @@ body{
 .welcome__texto h2{
     font-size: 80px;
     font-weight: 600;
-    color: white;
+    color: var(--text-color);;
 }
 
 .welcome__texto h3{
     font-size: 45px;
     font-weight: 500;
-    color: white;
+    color: var(--text-color);;
     margin-bottom: 20px;
 }
 
 .welcome__texto h4{
     font-size: 30px;
     font-weight: 300;
-    color: white;
+    color: var(--text-color);;
     line-height: 2
 }
 
 .welcome__texto h1{
     font-size: 90px;
     font-weight: 800;
-    color: white;
+    color: var(--text-color);;
 }
 
 .welcome__texto p{
-    color: white;
+    color: var(--text-color);;
     font-size: 20px;
     line-height: 1.7;
     margin-bottom: 45px;
@@ -178,7 +194,7 @@ body{
 
 .welcome__texto a{
     display: inline-block;
-    color: white;
+    color: var(--text-color);;
     background-color: rgb(63, 63, 63);
     border: 1px solid transparent;
     padding: 10px 25px;
@@ -196,12 +212,25 @@ body{
     transform: translateX(7px) translateY(-5px);
 }
 
+.welcome__temas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15%;
+}
+
+.welcome__temas__botonTema{
+    min-height: 10px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
 /*QUIEN SOY*/
 
 #quienSoy h2{
     text-align: center;
     font-size: 90px;
-    color: white;
+    color: var(--text-color);;
 }
 
 .quienSoy__container{
@@ -214,7 +243,7 @@ body{
     padding: 3%;
     border: 2px solid ;
     border-radius: 30px;
-    color: white;
+    color: var(--text-color);;
     margin-top: 5%;
     background-color: rgb(71, 71, 71);
 }
@@ -230,13 +259,13 @@ body{
 #sobreMi h2{
     text-align: center;
     font-size: 90px;
-    color: white;
+    color: var(--text-color);;
 }
 
 #sobreMi p{
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: var(--text-color);;
     padding: 2%;
 }
 
@@ -314,7 +343,7 @@ animation: girarPunto 2s linear forwards;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: var(--text-color);;
 }
 
 .sobreMi__container__carta__pctj__num h3{
@@ -366,7 +395,7 @@ align-items: center;
 }
 
 .foro h2{
-    color: white;
+    color: var(--text-color);;
     font-weight: 700;
     font-size: 3rem;
 }
@@ -388,7 +417,7 @@ align-items: center;
 }
 
 .foro__entrada p{
-    color: white;
+    color: var(--text-color);;
     font-size: 16px;
 }
 
@@ -397,13 +426,13 @@ align-items: center;
 #portfolio h2{
     text-align: center;
     font-size: 90px;
-    color: white;
+    color: var(--text-color);;
 }
 
 #portfolio__desc{
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: var(--text-color);;
     padding: 2%;
 }
 
@@ -432,7 +461,7 @@ align-items: center;
 }
 
 .portfolio__cartas__carta h3{
-    color: white;
+    color: var(--text-color);;
     text-decoration: underline;
     font-size: 25px;
     font-weight: 800;
@@ -450,7 +479,7 @@ align-items: center;
 }
 
 .portfolio__cartas__carta h4{
-    color: white;
+    color: var(--text-color);;
     text-decoration: underline;
     font-size: 20px;
     font-weight: 400;
@@ -491,7 +520,7 @@ form:has(select > option[value="css"]:checked) + .portfolio__cartas .css {
 }
 
 .contacto h2{
-    color: white;
+    color: var(--text-color);;
     font-weight: 700;
     font-size: 3rem;
     text-align: center;
@@ -543,7 +572,7 @@ cursor: pointer;
 /* FOOTER */
 
 .footer p{
-    color: white;
+    color: var(--text-color);;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -575,7 +604,7 @@ cursor: pointer;
 }
 
 #footer__underIcons{
-    color: white;
+    color: var(--text-color);;
     text-align: center;
     text-decoration: overline;
 }
@@ -583,7 +612,7 @@ cursor: pointer;
 .footer__icons i{
     display: inline-block;
     font-size: 50px;
-    color: white;
+    color: var(--text-color);;
     animation: girar 2s infinite;
     animation-delay: 4s;
 }
