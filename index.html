@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+<script src="js/scripts.js"></script>
 <title>Emilio's Portfolio</title>
 
 </head>
@@ -44,7 +44,12 @@
             <h3>soy Emilio</h3>
             <h4>y este es mi</h4>
             <h1>Portfolio.</h1>
-            <a href="#quienSoy">Empecemos <i class="ri-logout-box-r-fill"></i></a>
+            <div class="welcome__temas">
+            <a class="welcome__temas__botonTema" onclick="setTheme('porDefecto')">Tema Oscuro  <i class="ri-logout-box-r-fill"></i></a>
+            <a class="welcome__temas__botonTema" onclick="setTheme('claro')">Tema Claro  <i class="ri-logout-box-r-fill"></i></a>
+            <a class="welcome__temas__botonTema" onclick="setTheme('azul')">Tema Azul  <i class="ri-logout-box-r-fill"></i></a>
+            </div>
+            
         </div>
 
         <div class="welcome__logo animate__animated animate__backInRight">
