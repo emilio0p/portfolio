@@ -60,3 +60,61 @@ else if (selectOpciones.value === "java") {
 }
 
 selectOpciones.addEventListener("change", esconderMostrarCartas);
+
+// EJERCICIO 3
+
+const contacto = document.querySelector(".contacto__content__form");
+
+const textArea = document.getElementById("body");
+
+const fila1 = document.createElement("p");
+
+const fila2 = document.createElement("p");
+
+const fila3 = document.createElement("p");
+
+textArea.addEventListener("blur", function() {
+  if (textArea.value === "") {
+    textArea.style.border="red 4px solid";
+    fila1.textContent = "No has rellenado el text area";
+    fila1.style.color = "red";
+    fila1.style.fontWeight = 800;
+    contacto.appendChild(fila1);
+  } else {
+    textArea.style.border="green 4px solid";
+    fila1.remove();
+  }
+});
+
+
+
+
+const asunto = document.getElementById("asunto");
+
+asunto.addEventListener("blur", function() {
+  if (asunto.value === "") {
+    asunto.style.border="red 4px solid";
+    fila2.textContent = "No has rellenado el asunto";
+    fila2.style.color = "red";
+    fila2.style.fontWeight = 800;
+    contacto.appendChild(fila2);
+  } else {
+    asunto.style.border="green 4px solid";
+    fila2.remove();
+  }
+});
+
+const nombre = document.getElementById("nomb");
+
+nombre.addEventListener("blur", function() {
+  if (nombre.value === "") {
+    nombre.style.border="red 4px solid";
+    fila3.textContent = "No has rellenado el nombre";
+    fila3.style.color = "red";
+    fila3.style.fontWeight = 800;
+    contacto.appendChild(fila3);
+  } else {
+    nombre.style.border="green 4px solid";
+    fila3.remove();
+  }
+});
